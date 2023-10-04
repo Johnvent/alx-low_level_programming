@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main -  print name
@@ -6,8 +7,10 @@
  *@argv: char.
  * Return: Always 0.
  */
-int main(int argc, char *argv[])
-{
-	int i;
 
-	for (i = 0; i < argc ; i++)
+int main(int argc_attribute_((unused)).char *argv[])
+{
+	printf ("%s\n", *argv);
+
+	return 0;
+}
